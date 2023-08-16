@@ -1,0 +1,15 @@
+
+<div class="w-100 d-flex justify-content-end" >
+  <ng-container *ngIf="data?.visible">
+    <ng-container *ngIf="isSuccess; else error">
+      <div class="w-25 alert alert-success" role="alert">
+        {{ data.text }}
+      </div>
+    </ng-container>
+    <ng-template #error>
+      <div class="w-25 alert alert-danger" role="alert">
+        {{ data.text }}
+      </div>
+    </ng-template>
+  </ng-container>
+</div>

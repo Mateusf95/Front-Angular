@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+nav{
+  background: rgb(36,2,64);
+  background: linear-gradient(45deg, rgba(36,2,64,1) 0%, rgba(102,5,208,1) 56%, rgba(148,11,187,1) 100%);
+  padding: 15px;
+}
+
+.title{
+  font-size: 36px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  padding-left: 05%;
+}
+
+a{
+  color: #fff;
+}
+
+.bi-person-circle{
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 20px;
+  padding: 2px 5px 1px 5px;
+  cursor: pointer;
+}
+
+.user-name{
+  color: #b18181;
+  position: absolute;
+  right: 20px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 12%;
+  padding: 2px 5px 1px 5px;
+  cursor: pointer;
+}
+
+.logo{
+  width: 100px;
+}

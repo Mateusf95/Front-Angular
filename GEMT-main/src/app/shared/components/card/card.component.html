@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="card col-4 mx-3 mt-4" *ngFor="let x of pedidos" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title"> {{cardTitle}}</h5>
+      <p class="card-text"><b>Nome : </b> {{x.name}}</p>
+      <p class="card-text"><b>Cidade: </b> {{x.address}}</p>
+      <p class="card-text"> {{x.request}} </p>
+      <p class="card-text"><b>Contato: </b> {{x.contact}}</p>
+      <a href="#" class="btn btn-primary">Contato</a>
+    </div>
+  </div>
+</div>

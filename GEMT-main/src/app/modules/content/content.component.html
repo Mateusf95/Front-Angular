@@ -1,0 +1,12 @@
+<div class="container-xl mb-5">
+
+  <app-buttons></app-buttons>
+
+  <div class="row">
+    <h1 class="title text-center py-4">Últimas Doações e Pedidos</h1>
+
+    <app-card [arrPedidos]="arrPedidos" [cardTitle]="'Pedido'"></app-card>
+    <app-card [arrPedidos]="arrDoacoes" [cardTitle]="'Doação'"></app-card>
+
+
+  </div>

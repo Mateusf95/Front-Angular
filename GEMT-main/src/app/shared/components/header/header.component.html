@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/content">
+      <!-- <h1 class="title ms-4">GEMT</h1> -->
+      <img src="../../../assets/gemt-edited-logo.png" alt="GEMT-logo" class="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link ms-5" routerLink="/quemSomos">Quem Somos</a>
+        <a class="nav-link" routerLink="/contatos">Contatos</a>
+        <span *ngIf="userName" class="user-name">Olá, {{userName}}</span>
+        <a class="nav-link" (click)="loginOrLogout()" routerLink="/login"><i style="font-size: 28px;"
+            class="bi bi-person-circle ">{{userName ? 'Logout':''}}</i></a>
+        <span *ngIf="loggedUserName" class="user-name" style="font-size: 12px;">Olá, {{loggedUserName}}</span>
+      </div>
+    </div>
+  </div>
+</nav>
